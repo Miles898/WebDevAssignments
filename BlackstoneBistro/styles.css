@@ -4,3 +4,6 @@ ol, ul {
 #perens{
     font-style: italic;
 }
+#DeliveryInstructions{
+    display: flex;
+}

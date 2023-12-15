@@ -32,9 +32,11 @@
         <label for="email">Email:</label>
         <input id="email" name="email" class="text" type="text">
       </li>
+      <li>
+        <label for="DeliveryInstructions">Delivery Instructions:</label>
+        <textarea id="DeliveryInstructions" name="DeliveryInstructions" rows="4" cols="50" placeholder="No more than 400 characters long"></textarea>
+      </li>
     </ul>
-    <label for="DeliveryInstructions">Delivery instructions:</label>
-        <input id="DeliveryInstructions" name="DeliveryInstructions" class="text" type="text" placeholder="No more than 400 characters long">
   </fieldset>
 
     <h2>Design Your Dream Pizza:</h2>
@@ -49,36 +51,73 @@
           <label for="ClassicWhite">Classic white:</label>
           <input id="ClassicWhite" name="ClassicWhite" class="radio" type="radio">
         </li>
-        <li>Multigrain</li>
-        <li>Cheese-stuffed crust</li>
-        <li>Gluten-free</li>
+        <li>
+          <label for="Multigrain">Multigrain:</label>
+          <input id="Multigrain" name="Multigrain" class="radio" type="radio">
+        </li>
+        <li>
+          <label for="StuffedCrust">Cheese-stuffed crust:</label>
+          <input id="StuffedCrust" name="StuffedCrust" class="radio" type="radio">
+        </li>
+        <li>
+          <label for="GlutenFree">Gluten-free:</label>
+          <input id="GlutenFree" name="GlutenFree" class="radio" type="radio">
+        </li>
       </ul>
     </fieldset>
     <fieldset>
       <legend>Toppings <span id="perens">(Choose as many as you want)</span></legend>
       <ul>
         <li>
-          <label for="RedSauce">Red sauce:</label>
+          <label for="RedSauce">Red sauce</label>
           <input id="RedSauce" name="RedSauce" class="checkbox" type="checkbox">
         </li>
-        <li>White sauce</li>
-        <li>Mozzarella Cheese</li>
-        <li>Pepperoni</li>
-        <li>Mushrooms</li>
-        <li>Peppers</li>
-        <li>Anchovies</li>
+        <li>
+          <label for="WhiteSauce">White sauce</label>
+          <input id="WhiteSauce" name="WhiteSauce" class="checkbox" type="checkbox">
+        </li>
+        <li>
+          <label for="MozzarellaCheese">Mozzarella Cheese</label>
+          <input id="MozzarellaCheese" name="MozzarellaCheese" class="checkbox" type="checkbox">
+        </li>
+        <li>
+          <label for="Pepperoni">Pepperoni</label>
+          <input id="Pepperoni" name="Pepperoni" class="checkbox" type="checkbox">
+        </li>
+        <li>
+          <label for="Mushrooms">Mushrooms</label>
+          <input id="Mushrooms" name="Mushrooms" class="checkbox" type="checkbox">
+        </li>
+        <li>
+          <label for="Peppers">Peppers</label>
+          <input id="Peppers" name="Peppers" class="checkbox" type="checkbox">
+        </li>
+        <li>
+          <label for="Anchovies">Anchovies</label>
+          <input id="Anchovies" name="Anchovies" class="checkbox" type="checkbox">
+        </li>
       </ul>
     </fieldset>
     <fieldset>
       <legend>Number</legend>
       <p>
-        <label for="NumberOfPizzas">How many pizzas:</label>
-        <input id="NumberOfPizzas" name="NumberOfPizzas" class="dropdown" type="">
+        <label for="NumberOfPizzas">How many pizzas?</label>
+        <select id="NumberOfPizzas" name="NumberOfPizzas" tabindex="10">
+          <option selecteed="selected" value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
       </p>
     </fieldset>
   </fieldset>
-  <input name="subButton" type="submit" value="Bring me a pizza!">
-  <input name="restButton" type="reset" value="Reset">
+    <input name="subButton" type="submit" value="Bring me a pizza!">
+    <input name="restButton" type="reset" value="Reset">
 </form>
 
 </body>
